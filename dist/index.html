@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="../src/reset.css" type="text/css">
+<link rel="stylesheet" href="../src/main.css" type="text/css">
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ToDoList</title>
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="projectColumn">
+        <h1 id="currProj">Current Projects</h1>
+
+        <div id="addNewProj">
+          <input type="text" id="addProjText">
+          <button id="addProjBtn">Add Project</button>
+        </div>
+
+        <div id="projects">
+
+          <!-- starting layout for project
+          <div class="project">
+            <h2 class="projName">Project 1</h2>
+            <div class="projBtns">
+              <button class="editProj">Edit</button>
+              <button class="deleteProj">Delete</button>
+            </div>
+          </div>
+          -->
+        
+        </div>
+        
+      </div>
+
+      <div id="openProjectColumn">
+
+        <h1 id="openProjName"></h1>
+        
+        <div id="items">
+
+          <!-- starting layout for item
+          <div class="item">
+            <h2 class="itemTitle">Item Title</h2>
+            <h2 class="itemDate">Item Due Date</h2>
+            <select class="priority">
+              <option value="High">High</option>
+              <option value="Medium">Medium</option>
+              <option value="Low">Low</option>
+            </select>
+            <div class="itemBtns">
+              <button class="editItem">Open/Edit</button>
+              <button class="deleteItem">Delete</button>
+            </div>
+            <div class="openItem">
+              <label>Title<input type="text" class="openTitle"></input></label>
+              <label>Date<input type="date" class="openDate"></input></label>
+              <label>Description<textarea class="openDesc"></textarea></label>
+              <div class="openItemBtns">
+                <button class="saveItem">Save</button>
+                <button class="cancelItem">Cancel</button>
+              </div>
+            </div>
+          </div>
+           -->
+
+        </div>
+
+        
+
+      </div>
+
+      <div id="addItemColumn">
+
+        <h2 id="addItemHeader">Add an Item to the Open Project</h2>
+
+        <form id="addItemForm">
+          <label for="addTitle">Title: <input type="text" id="addTitle" required></label>
+          <label for="addDate">Date: <input type="date" id="addDate" required></label>
+          <div id="addDescContainer">
+            <label for="addDesc">Description:</label>
+            <textarea id="addDesc"></textarea>
+          </div>
+          <label for="addPriority">Priority:
+            <select id="addPriority">
+              <option value="High">High</option>
+              <option value="Medium">Medium</option>
+              <option value="Low">Low</option>
+            </select>
+          </label>
+          <div id="formButtons">
+            <input type="submit" value="Add Item">
+            <input type="reset" value="Reset">
+          </div>
+        </form>
+        
+
+      </div>
+
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
